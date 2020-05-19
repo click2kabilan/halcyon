@@ -1,20 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30104.148
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Halcyon", "src\Halcyon\Halcyon.xproj", "{6D43348B-BB99-4431-BF49-F5C277EB2069}"
-EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Halcyon.WebApi", "src\Halcyon.WebApi\Halcyon.WebApi.xproj", "{51141F80-555A-416D-9596-517B81D1BBC3}"
-EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Halcyon.Mvc", "src\Halcyon.Mvc\Halcyon.Mvc.xproj", "{61301A50-41DB-43E0-AA67-867AB52B0CA0}"
-EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Halcyon.Tests", "test\Halcyon.Tests\Halcyon.Tests.xproj", "{4DCA7283-193F-4F64-8ED2-DDE31D536526}"
-EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Halcyon.Tests.SelfHost.Mvc", "test\Halcyon.Tests.SelfHost.Mvc\Halcyon.Tests.SelfHost.Mvc.xproj", "{09471327-10FB-4308-8F33-91A9605FD230}"
-EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Halcyon.Tests.SelfHost.WebApi", "test\Halcyon.Tests.SelfHost.WebApi\Halcyon.Tests.SelfHost.WebApi.xproj", "{2A2D18B8-29D8-4D43-BD71-BDE6464ACF8C}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{7CAE2965-EABD-493F-8DF4-BF2EAE886FF5}"
 	ProjectSection(SolutionItems) = preProject
 		global.json = global.json
@@ -40,7 +28,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "scripts", "scripts", "{9489
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{D7E7B21A-D258-4E19-938F-3ACA5642CE82}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{6E13B052-0279-4785-9D41-CFAB1716722E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Halcyon", "src\Halcyon\Halcyon.csproj", "{FFC0AFA7-329A-4350-BCB8-378DA453C6F4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Halcyon.Mvc", "src\Halcyon.Mvc\Halcyon.Mvc.csproj", "{A4731CDF-5DD4-4F51-8633-5784CACEB034}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -48,40 +38,23 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{6D43348B-BB99-4431-BF49-F5C277EB2069}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6D43348B-BB99-4431-BF49-F5C277EB2069}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6D43348B-BB99-4431-BF49-F5C277EB2069}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6D43348B-BB99-4431-BF49-F5C277EB2069}.Release|Any CPU.Build.0 = Release|Any CPU
-		{51141F80-555A-416D-9596-517B81D1BBC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{51141F80-555A-416D-9596-517B81D1BBC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{51141F80-555A-416D-9596-517B81D1BBC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{51141F80-555A-416D-9596-517B81D1BBC3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{61301A50-41DB-43E0-AA67-867AB52B0CA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{61301A50-41DB-43E0-AA67-867AB52B0CA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{61301A50-41DB-43E0-AA67-867AB52B0CA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{61301A50-41DB-43E0-AA67-867AB52B0CA0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4DCA7283-193F-4F64-8ED2-DDE31D536526}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4DCA7283-193F-4F64-8ED2-DDE31D536526}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4DCA7283-193F-4F64-8ED2-DDE31D536526}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4DCA7283-193F-4F64-8ED2-DDE31D536526}.Release|Any CPU.Build.0 = Release|Any CPU
-		{09471327-10FB-4308-8F33-91A9605FD230}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{09471327-10FB-4308-8F33-91A9605FD230}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{09471327-10FB-4308-8F33-91A9605FD230}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{09471327-10FB-4308-8F33-91A9605FD230}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2A2D18B8-29D8-4D43-BD71-BDE6464ACF8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2A2D18B8-29D8-4D43-BD71-BDE6464ACF8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2A2D18B8-29D8-4D43-BD71-BDE6464ACF8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2A2D18B8-29D8-4D43-BD71-BDE6464ACF8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFC0AFA7-329A-4350-BCB8-378DA453C6F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFC0AFA7-329A-4350-BCB8-378DA453C6F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFC0AFA7-329A-4350-BCB8-378DA453C6F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFC0AFA7-329A-4350-BCB8-378DA453C6F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4731CDF-5DD4-4F51-8633-5784CACEB034}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4731CDF-5DD4-4F51-8633-5784CACEB034}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4731CDF-5DD4-4F51-8633-5784CACEB034}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4731CDF-5DD4-4F51-8633-5784CACEB034}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{6D43348B-BB99-4431-BF49-F5C277EB2069} = {D7E7B21A-D258-4E19-938F-3ACA5642CE82}
-		{51141F80-555A-416D-9596-517B81D1BBC3} = {D7E7B21A-D258-4E19-938F-3ACA5642CE82}
-		{61301A50-41DB-43E0-AA67-867AB52B0CA0} = {D7E7B21A-D258-4E19-938F-3ACA5642CE82}
-		{4DCA7283-193F-4F64-8ED2-DDE31D536526} = {6E13B052-0279-4785-9D41-CFAB1716722E}
-		{09471327-10FB-4308-8F33-91A9605FD230} = {6E13B052-0279-4785-9D41-CFAB1716722E}
-		{2A2D18B8-29D8-4D43-BD71-BDE6464ACF8C} = {6E13B052-0279-4785-9D41-CFAB1716722E}
+		{FFC0AFA7-329A-4350-BCB8-378DA453C6F4} = {D7E7B21A-D258-4E19-938F-3ACA5642CE82}
+		{A4731CDF-5DD4-4F51-8633-5784CACEB034} = {D7E7B21A-D258-4E19-938F-3ACA5642CE82}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {88981BF5-E00B-45E2-9DEE-A6577ED8015D}
 	EndGlobalSection
 EndGlobal

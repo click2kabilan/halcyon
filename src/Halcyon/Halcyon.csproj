@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Version>3.0.0</Version>
+    <Authors>CareerHub</Authors>
+    <Description>HAL Models for producing HAL Json</Description>
+    <PackageProjectUrl>https://github.com/Flogex/halcyon</PackageProjectUrl>
+    <PackageTags>"Hypermedia", "ASP.NET", "HAL", "JSON", "WebApi"</PackageTags>
+    <RepositoryType></RepositoryType>
+    <RepositoryUrl>https://github.com/Flogex/halcyon</RepositoryUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="Tavis.UriTemplates" Version="1.1.1" />
+  </ItemGroup>
+
+</Project>
